@@ -27,9 +27,6 @@ To create the dist package, run either:
 
     npm run build
 
-or
-
-    npm run watch
 
 ---
 
