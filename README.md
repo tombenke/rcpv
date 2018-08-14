@@ -12,7 +12,9 @@ Remote Controlled Presentation Viewer
 
 ## Features:
 
-TBD.
+Shows URLs in iFrame, play multimedia files such as sounds and videos.
+
+The content to be displayed can be remote controlled via messages through websocket.
 
 ## Installation
 
