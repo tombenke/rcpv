@@ -1,0 +1,4 @@
+voice:
+    say: null
+    hear:
+        listen: false # Microphone is disabled by default

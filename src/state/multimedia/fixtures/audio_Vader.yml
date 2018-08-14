@@ -1,0 +1,2 @@
+type: audio/mpeg # A regular mime-type such as: video/mp4, video/x-flv, audio/mpeg, etc.
+content: swvader02.mp3 # a file name (relative to the resources folder), or a URI

@@ -1,0 +1,5 @@
+topic: multimedia
+type: play
+payload:
+    type: audio/mpeg # A regular mime-type such as: video/mp4, video/x-flv, audio/mpeg, etc.
+    content: sw_c3po_human_cyborg_relations.mp3 # a file name (relative to the resources folder), or a URI

@@ -1,0 +1,4 @@
+# This message will switch the agent to listening mode (enable the microphone)
+topic: hear
+type: listen
+payload: true

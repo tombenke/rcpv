@@ -1,0 +1,19 @@
+# This is a short slideshow
+---
+- delay: 0
+  message:
+    topic: multimedia
+    type: show
+    payload: "https://www.wikipedia.org/wiki/Raspberry_Pi"
+
+- delay: 8000
+  message:
+    topic: multimedia
+    type: show
+    payload: "https://www.raspberrypi.org/magpi/"
+
+- delay: 8000
+  message:
+    topic: multimedia
+    type: show
+    payload: "https://www.scoop.it/"

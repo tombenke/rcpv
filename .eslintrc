@@ -1,0 +1,34 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "globals": {
+        "document": false
+    },
+    "rules": {
+        no-trailing-spaces: ["error", { "skipBlankLines": true }],
+        no-unused-vars: ["error", { "args": "none" }],
+        comma-spacing: ["error", { "before": false, "after": true }],
+        key-spacing: ["error", { "beforeColon": false }],
+        no-console: 0,
+        indent: ["error", 4],
+        "react/prop-types": [0],
+        "react/display-name": [0]
+    },
+    "parserOptions": {
+        "sourceType": "module",
+            "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    }
+}
