@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from 'react-redux'
-import { showSelector } from '../state/presentation/'
+import { showSelector, showCountSelector } from '../state/presentation/'
 const objectAssign = require("object-assign")
 
 function noop() {}
@@ -41,14 +41,21 @@ class IFrame extends Component {
 
 class Presentation extends Component {
     render() {
-        const frameA = <IFrame src={this.props.show} />;
-        const frameB = <IFrame src={""} />;
-        return frameA
+        if (this.props.showCount % 2 == 0) {
+            const frameA = <IFrame src={this.props.show} />;
+            const frameB = <IFrame src={""} />;
+            return frameA
+        } else {
+            const frameA = <IFrame src={""} />;
+            const frameB = <IFrame src={this.props.show} />;
+            return frameB
+        }
     }
 }
 
 const mapStateToProps = state => ({
-    show: showSelector(state)
+    show: showSelector(state),
+    showCount: showCountSelector(state)
 })
 
 const mapDispatchToProps = {
