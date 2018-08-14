@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export EASER_PORT=3007
+export EASER_PORT=3006
 
 docker run -it \
     --env EASER_PORT="$EASER_PORT" \

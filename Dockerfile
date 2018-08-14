@@ -8,7 +8,7 @@ FROM node:6.11.2
 
 # Set the environment to the application server
 ENV EASER_USERS=/content/users.yml
-ENV EASER_PORT=3007
+ENV EASER_PORT=3006
 ENV EASER_USE_PDMS="true"
 ENV PDMS_NATS_URI="nats://demo.nats.io:4222"
 ENV EASER_VIEWSPATH=/content/views/

@@ -4,10 +4,10 @@
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3007/LTS.svg#1_0"
+    payload: "http://localhost:3006/LTS.svg#1_0"
 
 - delay: 2000
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3007/LTS.svg#2_0"
+    payload: "http://localhost:3006/LTS.svg#2_0"
