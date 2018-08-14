@@ -6,7 +6,7 @@ import { wsConnect, wsDisconnect, wsSubscribe, wsPublish } from '../wsAdapter/'
 import { startupMockWsServer, shutdownMockWsServer } from '../wsAdapter/mockWsServer'
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
-import { playMsgToAction } from './multimediaObserver'
+//import { multimediaMsgToAction } from './multimediaObserver'
 
 const middlewares = [thunk]
 const mockStore = configureMockStore(middlewares)
@@ -41,14 +41,6 @@ describe('multimedia.actions', () => {
         const expectedAction = { type: 'PLAY_ACTION', payload: {} }
 
         expect(actions.playAction({})).toEqual(expectedAction)
-    })
-
-    it('#showAction', () => {
-        const store = mockStore({})
-        const expectedWsMsg = { topic: 'multimedia', type: 'show' }
-        const expectedAction = { type: 'SHOW_ACTION', payload: {} }
-
-        expect(actions.showAction({})).toEqual(expectedAction)
     })
 
 })

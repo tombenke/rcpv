@@ -6,10 +6,8 @@ import _ from 'lodash'
 
 export const {
     playAction,
-    playDoneAction,
-    showAction,
+    playDoneAction
 } = createActions({
     PLAY_ACTION: content => content,
-    PLAY_DONE_ACTION: null,
-    SHOW_ACTION: content => content
+    PLAY_DONE_ACTION: null
 })

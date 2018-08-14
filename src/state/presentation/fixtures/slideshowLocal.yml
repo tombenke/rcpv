@@ -1,0 +1,13 @@
+# This is a short slideshow
+---
+- delay: 0
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3007/index.html"
+
+- delay: 2000
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3007/login.html"

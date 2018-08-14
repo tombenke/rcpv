@@ -1,17 +1,17 @@
 import React, { Component } from "react"
 import { connect } from 'react-redux'
-import { showSelector } from '../state/multimedia/'
+import { showSelector } from '../state/presentation/'
 const objectAssign = require("object-assign")
 
 function noop() {}
 
-class Presentation extends Component {
+class IFrame extends Component {
 
     render() {
 
         let props = {
             frameBorder: "0",
-            src: this.props.show || "",
+            src: this.props.src,
             target: "_parent",
             allowFullScreen: this.props.allowFullScreen || false,
             style: objectAssign(
@@ -35,6 +35,15 @@ class Presentation extends Component {
             "iframe",
             objectAssign(props, this.props.id ? { id: this.props.id } : {}, this.props.className ? { className: this.props.className } : {})
         )
+    }
+}
+
+
+class Presentation extends Component {
+    render() {
+        const frameA = <IFrame src={this.props.show} />;
+        const frameB = <IFrame src={""} />;
+        return frameA
     }
 }
 

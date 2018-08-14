@@ -17,6 +17,6 @@ describe('store', () => {
 
     it('getStore()', () => {
         const initialState = configureStore().getState()
-        expect(initialState).toIncludeKeys(['multimedia', 'timer', 'voice'])
+        expect(initialState).toIncludeKeys(['presentation', 'multimedia', 'timer', 'voice'])
     })
 })

@@ -1,0 +1,13 @@
+# This is a short slideshow
+---
+- delay: 0
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3007/LTS.svg#1_0"
+
+- delay: 2000
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3007/LTS.svg#2_0"

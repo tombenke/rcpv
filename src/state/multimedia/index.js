@@ -1,6 +1,6 @@
 import { multimedia } from './reducers'
-import { playAction, playDoneAction, showAction } from './actions'
-import { playSelector, showSelector } from './selectors'
+import { playAction, playDoneAction } from './actions'
+import { playSelector } from './selectors'
 import { multimediaMsgToAction } from './multimediaObserver'
 export {
     // reducer
@@ -9,11 +9,9 @@ export {
     // action
     playAction,
     playDoneAction,
-    showAction,
 
     // selectors
     playSelector,
-    showSelector,
 
     multimediaMsgToAction
 }
