@@ -41,15 +41,8 @@ class IFrame extends Component {
 
 class Presentation extends Component {
     render() {
-        if (this.props.showCount % 2 == 0) {
-            const frameA = <IFrame src={this.props.show} />;
-            const frameB = <IFrame src={""} />;
-            return frameA
-        } else {
-            const frameA = <IFrame src={""} />;
-            const frameB = <IFrame src={this.props.show} />;
-            return frameB
-        }
+        const frame = <IFrame src={this.props.show} />;
+        return frame
     }
 }
 
