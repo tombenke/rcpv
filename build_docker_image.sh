@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t /rcpv:latest .
+docker build -t tombenke/rcpv:latest .

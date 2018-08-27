@@ -96,7 +96,7 @@
     "coveralls": "NODE_ENV=test istanbul cover _mocha --report lcovonly -- recursive --compilers js:babel-register --timeout 15000 'src/**/*.spec.js' -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --progress --color --inline --env.dev",
-    "build": "webpack -p --progress --env.prod && echo \"mkdir -p ./dist/rest-api/services && TODO: && cp -r ./node_modules/wat-ui/lib/services ./dist/rest-api/\"",
+    "build": "webpack -p --progress --env.prod",
     "prepublishOnly": "npm run lint && npm run test && npm run build && npm run docs",
     "clean": "rimraf ./dist"
   },

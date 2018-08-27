@@ -4,10 +4,49 @@
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3006/LTS.svg#1_0"
+    payload: ""
 
-- delay: 2000
+- delay: 50
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3006/LTS.svg#2_0"
+    payload: "http://localhost:3002/demo/demo.svg#1_0"
+
+- delay: 3000
+  message:
+    topic: presentation
+    type: show
+    payload: ""
+
+- delay: 50
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3002/demo/demo.svg#2_0"
+
+- delay: 3000
+  message:
+    topic: presentation
+    type: show
+    payload: ""
+
+
+- delay: 50
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3002/demo/demo.svg#3_0"
+
+- delay: 3000
+  message:
+    topic: presentation
+    type: show
+    payload: ""
+
+
+- delay: 50
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3002/demo/demo.svg#4_0"
+

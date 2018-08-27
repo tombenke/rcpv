@@ -108,7 +108,6 @@ module.exports = (env = {}) => {
           {from: './content/users.yml', to: '../users.yml'},
           {from: './content/views', to: '../views'},
           {from: './rest-api', to: '../rest-api'}
-//          {from: './node_modules/wat-ui/lib/services' to: './dist/rest-api/'}
         ],
         {copyUnmodified: false}
       )

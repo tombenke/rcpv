@@ -4,10 +4,16 @@
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3006/index.html"
+    payload: "http://localhost:3002/demo/1.html"
 
 - delay: 2000
   message:
     topic: presentation
     type: show
-    payload: "http://localhost:3006/login.html"
+    payload: "http://localhost:3002/demo/2.html"
+
+- delay: 2000
+  message:
+    topic: presentation
+    type: show
+    payload: "http://localhost:3002/demo/3.html"

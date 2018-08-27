@@ -25,7 +25,7 @@ Run the install command:
 
 ## Build
 
-To create the dist package, run either:
+To create the dist package, run:
 
     npm run build
 

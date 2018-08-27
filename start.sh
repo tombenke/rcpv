@@ -3,7 +3,7 @@
 export easer=easer-server
 export workdir=`pwd`
 export EASER_USERS="${workdir}/dist/users.yml"
-export EASER_PORT=3006
+export EASER_PORT=3002
 export EASER_USE_PDMS="true"
 #export PDMS_NATS_URI="nats://demo.nats.io:4222"
 export PDMS_NATS_URI="nats://localhost:4222"
