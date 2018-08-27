@@ -97,7 +97,7 @@
     "dev": "webpack -d --progress --watch --profile --json > compilation-stats.json --env.dev",
     "start": "webpack-dev-server --progress --color --inline --env.dev",
     "build": "webpack -p --progress --env.prod",
-    "prepublishOnly": "npm run lint && npm run test && npm run build && npm run docs",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "clean": "rimraf ./dist"
   },
   "pre-push": [
