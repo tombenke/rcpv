@@ -18,5 +18,5 @@ export EASER_AUTH_FAILURE_REDIRECT="/login"
 export WSSERVER_FORWARD_TOPICS="true"
 export WSSERVER_FORWARDER_EVENT="message"
 export WSPDMSGW_INBOUND_TOPICS="speak,hear,multimedia,presentation"
-export WSPDMSGW_OUTBOUND_TOPICS="hear"
+export WSPDMSGW_OUTBOUND_TOPICS="hear,speakStatus"
 $easer

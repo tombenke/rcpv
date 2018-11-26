@@ -30,6 +30,7 @@
   "dependencies": {
     "ajv": "6.1.1",
     "bootstrap": "4.0.0",
+    "browser-or-node": "^1.1.0",
     "chart.js": "2.7.1",
     "flag-icon-css": "2.9.0",
     "font-awesome": "4.7.0",
