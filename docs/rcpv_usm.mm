@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="wat_usm" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1520316749765">
+<node TEXT="rcpv_usm" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1543324339605">
 <hook NAME="AutomaticEdgeColor" COUNTER="4"/>
 <edge COLOR="#808080"/>
 <hook NAME="MapStyle">
@@ -299,7 +299,7 @@
 </node>
 <node TEXT="alt" ID="ID_476803512" CREATED="1542634255139" MODIFIED="1542634258286">
 <node TEXT="via cli tool" ID="ID_1311944776" CREATED="1542634258828" MODIFIED="1542634264403">
-<node TEXT="Author orders the rcpv to do the presentation via the PCTL" STYLE_REF="activityDetailHiPrio" ID="ID_178629948" CREATED="1542885051804" MODIFIED="1542885186360">
+<node TEXT="Author orders the rcpv to do the presentation via the PCTL" STYLE_REF="activityDetailHiPrio" FOLDED="true" ID="ID_178629948" CREATED="1542885051804" MODIFIED="1542885186360">
 <node TEXT="rcpv-ctrl present -u http://&lt;pv.server.hostname&gt; -n &lt;presentation-name&gt;" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" ID="ID_732146248" CREATED="1542885187354" MODIFIED="1542885307146"/>
 <node TEXT="The PCTL retrieves the presentations index from the content_root of the PCP" STYLE_REF="activityDetailHiPrio" ID="ID_1547095708" CREATED="1542886078454" MODIFIED="1542886212922">
 <node TEXT="req." ID="ID_939774345" CREATED="1542886336919" MODIFIED="1542886339590">

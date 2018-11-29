@@ -1,17 +1,16 @@
 [
   {
-    "uri": "1.html",
-    "duration": 3000,
+    "uri": "a1.svg",
+    "duration": 500,
     "text": "This is the narrative text to slide 1"
   },
   {
     "uri": "2.html",
-    "duration": 3000,
+    "duration": 5000,
     "text": "This is the narrative text to slide 2"
   },
   {
     "uri": "3.html",
-    "duration": 3000,
     "text": "This is the narrative text to slide 3"
   }
 ]

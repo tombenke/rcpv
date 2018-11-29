@@ -17,6 +17,13 @@ export EASER_AUTH_FAILURE_REDIRECT="/login"
 # Websocket topics related config parameters
 export WSSERVER_FORWARD_TOPICS="true"
 export WSSERVER_FORWARDER_EVENT="message"
+
+# Standalone config:
 export WSPDMSGW_INBOUND_TOPICS="speak,hear,multimedia,presentation"
 export WSPDMSGW_OUTBOUND_TOPICS="hear,speakStatus"
+
+# robop config:
+#export WSPDMSGW_INBOUND_TOPICS="multimedia,presentation"
+#export WSPDMSGW_OUTBOUND_TOPICS=""
+
 $easer
