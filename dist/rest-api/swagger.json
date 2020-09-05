@@ -1,0 +1,25 @@
+{
+    "info": {
+        "title": "The API descriptor to the rcpv server",
+        "version": "1.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "x-static": {
+                    "config": {
+                        "dotfiles": "allow",
+                        "index": true
+                    },
+                    "contentPath": "./content/private"
+                }
+            }
+        }
+    },
+    "swagger": "2.0"
+}

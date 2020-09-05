@@ -1,29 +1,25 @@
 #!/bin/bash
 
-export easer=easer-server
+export easer=easer
 export workdir=`pwd`
-export EASER_USERS="${workdir}/dist/users.yml"
-export EASER_PORT=3002
-export EASER_USE_PDMS="true"
-#export PDMS_NATS_URI="nats://demo.nats.io:4222"
-export PDMS_NATS_URI="nats://localhost:4222"
-export EASER_VIEWSPATH="${workdir}/dist/views/"
-export EASER_CONTENTPATH_PUBLIC="${workdir}/dist/public/"
-export EASER_CONTENTPATH_PRIVATE="${workdir}/dist/private/"
-export EASER_RESTAPIPATH="${workdir}/dist/rest-api/services"
-export EASER_AUTH_SUCCESS_REDIRECT="/private/"
-export EASER_AUTH_FAILURE_REDIRECT="/login"
+#export WEBSERVER_USERS="${workdir}/dist/users.yml"
+export WEBSERVER_PORT=3002
+export WEBSERVER_USE_PDMS="true"
+export PDMS_NATS_URI="nats://demo.nats.io:4222"
+#export PDMS_NATS_URI="nats://localhost:4222"
+
+export WEBSERVER_RESTAPIPATH="${workdir}/rest-api/swagger.json"
 
 # Websocket topics related config parameters
 export WSSERVER_FORWARD_TOPICS="true"
 export WSSERVER_FORWARDER_EVENT="message"
 
 # Standalone config:
-export WSPDMSGW_INBOUND_TOPICS="speak,hear,multimedia,presentation"
-export WSPDMSGW_OUTBOUND_TOPICS="hear,speakStatus"
+#export WSPDMSGW_INBOUND_TOPICS="speak,hear,multimedia,presentation"
+#export WSPDMSGW_OUTBOUND_TOPICS="hear,speakStatus"
 
 # robop config:
-#export WSPDMSGW_INBOUND_TOPICS="multimedia,presentation"
-#export WSPDMSGW_OUTBOUND_TOPICS=""
+export WSPDMSGW_INBOUND_TOPICS="multimedia,presentation"
+export WSPDMSGW_OUTBOUND_TOPICS=""
 
-$easer
+$easer -d -l debug
