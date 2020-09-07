@@ -16,7 +16,7 @@
                         "dotfiles": "allow",
                         "index": true
                     },
-                    "contentPath": "./content/private"
+                    "contentPath": "./dist/private"
                 }
             }
         }
