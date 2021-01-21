@@ -5,12 +5,13 @@ export workdir=`pwd`
 #export WEBSERVER_USERS="${workdir}/dist/users.yml"
 export WEBSERVER_PORT=3002
 export WEBSERVER_USE_PDMS="true"
-export PDMS_NATS_URI="nats://demo.nats.io:4222"
-#export PDMS_NATS_URI="nats://localhost:4222"
+#export PDMS_NATS_URI="nats://demo.nats.io:4222"
+export PDMS_NATS_URI="nats://localhost:4222"
 
 export WEBSERVER_RESTAPIPATH="${workdir}/rest-api/swagger.json"
 
 # Websocket topics related config parameters
+export EASER_USE_WEBSOCKET="true"
 export WSSERVER_FORWARD_TOPICS="true"
 export WSSERVER_FORWARDER_EVENT="message"
 
