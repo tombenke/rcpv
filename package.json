@@ -28,7 +28,7 @@
   "bin": {},
   "main": "index.js",
   "dependencies": {
-    "ajv": "6.1.1",
+    "ajv": "6.12.3",
     "bootstrap": "4.0.0",
     "browser-or-node": "^1.1.0",
     "chart.js": "2.7.1",
